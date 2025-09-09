@@ -7,11 +7,11 @@ body{
 }
 @font-face{
     font-family: young;
-    src:url(fonts/young.ttf);
+    src:url(css/fonts/young.ttf);
 }
 @font-face{
     font-family: dolly;
-    src:url(fonts/dolly.ttf)
+    src:url(css/fonts/dolly.ttf)
 }
 h1{
     font-family: young;
