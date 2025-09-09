@@ -7,7 +7,7 @@ body{
 }
 @font-face{
     font-family: young;
-    src:url(Fonts/young.ttf);
+    src:url(fonts/young.ttf);
 }
 @font-face{
     font-family: dolly;
