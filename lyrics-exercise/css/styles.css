@@ -39,14 +39,14 @@ p{
     padding-bottom: 43px;
 }
 img{
-    width: 475px;
+    width: 460px;
     height: auto;
     border-radius: 10px;
     overflow: hidden;
 }
 .two-column{
     display: grid;
-    gap: 0px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
     padding-top: 40px;
     padding-left: 360px;
