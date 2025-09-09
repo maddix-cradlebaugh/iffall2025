@@ -1,0 +1,63 @@
+body{
+    background-color: #111111;
+    background-image: linear-gradient(#111111, #570000ff)
+}
+@font-face{
+    font-family: road;
+    src:url(road.ttf);
+}
+h1{
+    font-family: road;
+    font-size: 125px;
+    color: #F2F0EF;
+    padding: 0px;
+    font-weight: normal;
+}
+img{
+    width: 170px;
+    height: 170px;
+    margin-top: 70px;
+}
+.header-div{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 20px;
+}
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F2F0EF;
+}
+.body-div{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.body-div2{
+    padding-bottom: 50px;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 1.25;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding top: 20px;
+    color: #F2F0EF;
+}
+.char{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px
+    color: #F2F0EF;
+}
+.act{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-style: italic;
+    color: #F2F0EF;
+}
