@@ -46,7 +46,7 @@ img{
 }
 .two-column{
     display: grid;
-    gap: 20px;
+    gap: 35px;
     grid-template-columns: 1fr 1fr;
     padding-top: 40px;
     padding-left: 360px;
