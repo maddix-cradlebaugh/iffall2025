@@ -7,11 +7,11 @@ body{
 }
 @font-face{
     font-family: young;
-    src:url(young.ttf);
+    src:url(fonts/young.ttf);
 }
 @font-face{
     font-family: dolly;
-    src:url(dolly.ttf)
+    src:url(fonts/dolly.ttf)
 }
 h1{
     font-family: young;
@@ -46,9 +46,11 @@ img{
 }
 .two-column{
     display: grid;
-    gap: 35px;
+    gap: 0px;
     grid-template-columns: 1fr 1fr;
     padding-top: 40px;
+    padding-left: 360px;
+    padding-right: 320px;
     padding-bottom: 100px;
 }
 .play{
