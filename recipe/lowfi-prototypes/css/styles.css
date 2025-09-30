@@ -1,0 +1,21 @@
+div{
+    margin: 0 360px;
+}
+.using-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1rem 0;
+    align-items: start;
+}
+.using-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.using-grid li{
+    display: flex;
+    align-self: flex-start;
+}
