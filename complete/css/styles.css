@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+}
+header{
+    text-align: center;
+    padding-top: 166px; 
+    padding-bottom: 180px;
+    background-image: url(../images/MMT.jpg);
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    font-family: "Grenze", serif;
+    font-size: 80pt;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: white;
+}
+h2{
+    margin-top: 0px;
+}
+.intro{
+    max-width: 800px;
+    margin-left: auto; margin-right: auto;
+    width: 90%;
+    margin-top: 15px;
+}
+p{
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 11pt;
+    padding-bottom: 17px;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin-left: auto; margin-right: auto;
+  width: 90%;
+  margin-top: 15px;
+}
+.columns-wrapper {
+  background-color: #fff6edff;
+  padding: 2rem 0;
+}
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+ul{
+    font-family: "Inter", sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    line-height: 15pt;
+}
+ol{
+    font-family: "Inter", sans-serif;
+    font-size: 11pt;
+    font-weight: 500;
+}
+h2{
+    font-family: "Grenze", serif;
+    font-size: 17pt;
+    font-style: italic;
+}
+.left-column{
+    padding-top: 11px;
+}
+.name{
+    font-weight: 500;
+}
+.box {
+  border: 2px solid #333;
+  padding: 5px 0px 3px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.specs{
+    margin: 5px;
+}
+.instructions {
+  display: flex;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.left {
+  flex: 1;
+  padding: 1rem;
+}
+
+.right {
+  flex: 2;
+  padding: 1rem;
+}
+.steps{
+    margin-bottom: 35px;
+}
+.instructions .left img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+@media (max-width: 700px) {
+  .instructions {
+    flex-direction: column-reverse;
+  }
+.left, .right {
+    padding: 0;
+  }
+.instructions .left img {
+  width: 100%;
+  height: auto;
+}
+}
