@@ -1,0 +1,537 @@
+body {
+    color: #333;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+.button_container {
+	border: 1px solid #ddd;
+	margin: 0 10px 10px 0;
+	padding: 20px;
+	width: 300px;
+	height: 300px;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+a#btn_spotify {
+	display: inline-block;
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 25px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 10px 40px 0 40px;
+	background-color: #2ebd59;
+	border: 2px solid #2ebd59;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+a#btn_spotify:hover {
+	background-color: #fff;
+	border: 2px solid #000;
+				color: #000;
+}
+
+a#btn_amazon {
+	display: block;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border-radius: 50px;
+	margin: auto;
+	margin-top: 75px;
+	padding-top: 8px;
+	background-color: #232f3e;
+	color: #fff;
+	text-align: center;
+	font-size: 60px;
+	transition: all .2s;
+}
+
+a#btn_amazon:hover {
+	background-color: #fc9a18;
+}
+
+a#btn_twitter {
+	display: inline-block;
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin: auto;
+	margin-top: 105px;
+	padding: 10px 30px 0 30px;
+	background-color: #56cdf1;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a#btn_twitter:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+    background: rgb(46,191,236); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+a#btn_indiegogo {
+	display: inline-block;
+	position: relative;
+	margin:auto;
+	margin-top: 100px;
+	padding: 8px 16px;
+	background-color: #fff;
+	color: #eb1478;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: -2px;
+	transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #eb1478;
+	transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+	color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+a#btn_indiegogo span {
+	position: relative;
+	z-index: 10;
+}
+a#btn_moo {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 160px;
+  height: 80px;
+  border: 2px solid green;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a#btn_moo::before,
+a#btn_moo::after {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: opacity 0.3s ease;
+}
+
+a#btn_moo::before {
+  background-image: url('../images/moo-logo.png');
+  opacity: 1;
+}
+
+a#btn_moo::after {
+  background-image: url('../images/moo-logo-white.png');
+  opacity: 0;
+}
+
+a#btn_moo:hover {
+  background-color: green;
+}
+
+a#btn_moo:hover::before {
+  opacity: 0;
+}
+
+a#btn_moo:hover::after {
+  opacity: 1;
+}
+
+a#btn_dime {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+a#btn_dime::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-image: url('../images/dime-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 0.6s ease;
+}
+
+a#btn_dime:hover::before {
+  transform: translate(-50%, -50%) rotate(360deg) scale(1.3);
+}
+a#btn_fore {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  overflow: hidden;
+  background-image: url('../images/fore-logo-plane.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  background-color: navy;
+}
+a#btn_fore::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  background-image: url('../images/fore-logo-sun.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 0.6s ease;
+}
+a#btn_fore:hover::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+a#btn_ny {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 200px;
+  height: 70px;
+  border: 2px solid black;
+  background-color: #fff;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+}
+a#btn_ny::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  z-index: 0;
+  transition: left 0.4s ease;
+}
+a#btn_ny::after {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  background-image: url('../images/ny-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+a#btn_ny:hover::before {
+  left: 0;
+}
+a#btn_ny:hover::after {
+  background-image: url('../images/ny-logo-white.png');
+}
+a#btn_electra {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 150px;
+  height: 90px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  background-color: gray;
+}
+a#btn_electra::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  background-image: url('../images/electra-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s ease;
+}
+a#btn_electra::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 80%;
+  height: 80%;
+  background-image: url('../images/electra-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s ease, left 0.6s ease;
+}
+a#btn_electra:hover::before {
+  transform: translate(150%, -50%);
+}
+a#btn_electra:hover::after {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a#btn_electra:hover {
+  background-color: rgb(44, 193, 183);
+  transition: transform 0.6s ease;
+}
+a#btn_molly {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 220px;
+  height: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url('../images/molly-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  background-color: rgb(241, 233, 212);
+  font-family: averia libre, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+  color: transparent;
+}
+a#btn_molly:after {
+    content: "MOLLYJOGGER";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(241, 233, 212);
+    opacity: 0;
+ }
+a#btn_molly:hover::after {
+  opacity: 1;
+}
+a#btn_molly:hover {
+  background-image: none;
+  background-color: rgb(118, 94, 85)
+}
+a#btn_ideo {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 250px;
+  height: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+}
+a#btn_ideo::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url('../images/ideo-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+a#btn_ideo:hover::before {
+  transform: translate(-125%, -50%);
+}
+a#btn_ideo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 80px;
+    background-image: url('../images/ideo-logo-word.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translate(-15%, -50%);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+a#btn_ideo:hover::after{
+    opacity: 1;
+}
+a#btn_craig {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 125px;
+  height: 125px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: rgb(98, 0, 128);
+}
+a#btn_craig::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/craigslist-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translate(-50%, -50%) scaleY(1) rotate(0);
+    transition: transform 0.4s ease;
+    }
+a#btn_craig:hover::before {
+    transform: translate(-50%, -50%) scaleY(0.2) rotate(360deg);
+}
+
+a#btn_mk {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 200px;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../images/mk-logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+a#btn_mk::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+a#btn_mk:hover::before {
+    transform: scaleX(1);
+}
+a#btn_old {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 200px;
+  height: 80px;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  background-color: transparent;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+a#btn_old::before{
+  content: "OLD NAVY";
+  position: absolute;
+  inset: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 33px;
+  color: white;
+  transition: color 0.4s ease;
+  z-index: 2;
+}
+a#btn_old::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(52, 63, 130);
+    border-radius: 100%;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+a#btn_old:hover::after{
+    transform: scale(0);
+}
+a#btn_old:hover::before {
+    color: rgb(231, 87, 61);
+}
