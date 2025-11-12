@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+}
+header{
+    font-family: "Instrument Serif", serif;
+    font-style: normal;
+    font-size: 45px;
+    position: relative;
+    padding-top: 400px; 
+    padding-bottom: 400px;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    color: white;
+}
+body.home header{
+    background-image: url(images/home-title-image.png);
+}
+body.design header{
+    background-image: url(images/design-title-image.png);
+}
+body.models header{
+    background-image: url(images/image-header-models.png);
+}
+body.significance header{
+    background-image: url(images/title-image-sig.jpeg);
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+}
+ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+}
+.navbar{
+    position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 60px;
+  width: 100%;
+  padding: 60px 60px;
+}
+.logo{
+     display: flex;
+     align-items: center;
+     font-style: italic;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin-left: auto; margin-right: auto;
+  width: 90%;
+  margin-top: 15px;
+}
+.columns-wrapper {
+  padding: 2rem 0;
+}
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+.box {
+  border: 2px solid #333;
+  padding: 5px 0px 3px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.specs{
+    margin: 5px;
+}
+.home-image{
+    max-width: 600px;
+    margin-top: 20px;
+}
+.right-column{
+    background-color: #E4EBF1;
+}
+.main-content {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+.design-image{
+    max-width: 100%;
+}
+.slider-button {
+    position: absolute;
+    top: 1000px;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 50%;
+}
+.slider-button-left {
+    left: 10px;
+}
+.slider-button-right {
+    right: 10px;
+}
+.model-slides{
+    max-width: 100%;
+}

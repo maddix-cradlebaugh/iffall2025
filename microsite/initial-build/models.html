@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Initial Build</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="models">
+        <header>
+            <nav class="navbar">
+                <div class="logo"><a href="index.html">Porsche 928</a></div>
+                <ul class="navdiv">
+                     <li><a href="design.html">Designs</a></li>
+                     <li><a href="models.html">Models</a></li>
+                     <li><a href="significance.html">Significance</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-content">
+            <h1>Models</h1>
+            <img class="model-slides" src="images/slide-1980-s.jpeg" alt="1980 Porsche 928 S">
+            <img class="model-slides" src="images/slide-1985-s.webp" alt="1985 Porsche 928 S">
+            <img class="model-slides" src="images/slide-1987-s4.jpeg" alt="1987 Porsche 928 S4">
+            <img class="model-slides" src="images/slide-1989-gt.jpeg" alt="1989 Porsche 928 GT">
+            <img class="model-slides" src="images/slide-1992-gt.jpeg" alt="1992 Porsche 928 GTS">
+            <button class="slider-button slider-button-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="slider-button slider-button-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("model-slides");
+            if (n > x.length) {slideIndex = 1;}
+            if (n < 1) {slideIndex = x.length;}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+            }
+        </script>
+    </body>
+</html>
