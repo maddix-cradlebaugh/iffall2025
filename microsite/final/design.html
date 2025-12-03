@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porsche 928</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="design">
+        <header>
+            <nav class="navbar">
+                <div class="logo"><a href="index.html">Porsche 928</a></div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="hamburger">&#9776;</label>
+                <ul class="navdiv">
+                     <li><a href="design.html" id="btn_design">Design</a></li>
+                     <li><a href="models.html" id="btn_models">Models</a></li>
+                     <li><a href="significance.html" id="btn_significance">Significance</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-content">
+            <div class="conception">
+                <div class="subtitle">
+                    <h1>Conception</h1>
+                </div>
+                <p><br>In the late 1960s, Porsche was already known for building fast, high-performance sports cars. During the 1970s oil crisis, company leaders began discussing the idea of adding a more fuel-efficient luxury car to their lineup. Managing director Ernst Fuhrmann supported this idea because he was concerned that the famous 911 had nearly reached its limits in terms of performance and might not remain popular in the long term.Fuhrmann wanted Porsche to expand by creating a grand touring car that was more comfortable and practical than the 911, while still offering strong performance. Sales of the 911 had started to decline in the mid-1970s, which made his proposal even more relevant.</p>
+            </div>
+            <div class="columns-wrapper-design">
+                <div class="columns">
+                    <div class="image-left">
+                        <img src="images/design-image-1.jpeg" alt="Porsche 928 Design Sketch">
+                    </div>
+                    <div class="image-right">
+                        <img src="images/design-image-2.jpeg" class="design-image" alt="Porsche 928 Clay Model">
+                    </div>
+                </div>
+            </div>
+            <div class="conception">
+                <p>To appeal to the American market, which was Porsche's largest at the time, the new car would feature a front-mounted V8 engine, a more spacious interior, and two usable rear seats instead of the small ones in the 911. The goal was to create a model that could compete with Mercedes-Benz and BMW by combining Porsche's performance with greater comfort and luxury.
+                Ordered by Ferdinand Porsche to develop a production-feasible concept for the new model, Fuhrmann commenced a design study in 1971, resulting in the creation of the 928. This model marked Porsche's first clean-sheet design for its own model. Previous Porsche models had been iterations or collaborations: the 356 bore similarities to the Volkswagen Beetle, the 911 evolved from the 356, the 914 was a joint venture aimed at replacing the Volkswagen Karmann Ghia and 912, and the 924 stemmed from a discontinued Volkswagen and Audi project.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2025 Porsche. Maddix Cradlebaugh, Designer. Josh Ma, Creative Director. Sources: Wikipedia and Google Images.</p>
+        </div>
+        <script>
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                if (link.href === window.location.href.split('#')[0].split('?')[0]) {
+                link.classList.add("active");
+                }
+            });
+        </script>
+    </body>
+</html>

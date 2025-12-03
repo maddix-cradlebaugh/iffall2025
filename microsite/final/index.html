@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porshe 928</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e2f81561d3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body class="home">
+        <header>
+            <nav class="navbar">
+                <div class="logo"><a href="index.html">Porsche 928</a></div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="hamburger">&#9776;</label>
+                <ul class="navdiv">
+                     <li><a href="design.html" id="btn_design">Design</a></li>
+                     <li><a href="models.html" id="btn_models">Models</a></li>
+                     <li><a href="significance.html" id="btn_significance">Significance</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="columns-wrapper">
+            <div class="columns">
+            <div class="left-column">
+                <h1>About the 928</h1>
+                <img src="images/home-image-1.jpeg" alt="Porsche 928 Front View" class="home-image">
+                <img src="images/home-image-2.webp" alt="Porsche 928 Front View" class="home-image">
+                <img src="images/home-image-3.jpeg" alt="Porsche 928 Front View" class="home-image">
+            </div>
+            <div class="right-column">
+                <input type="checkbox" id="overview-toggle" class="overview-toggle">
+                <label for="overview-toggle" class="overview-label">Overview <i class="fa-solid fa-arrow-down"></i></label>
+                <div class="right-column-content">
+                    <div class="right-column-section">
+                        <div class="subtitle">
+                            <h1>Overview</h1>
+                        </div>
+                        <p class="manufacturer"><strong>Manufacturer</strong>
+                        <br>Porsche AG
+                        <br>
+                        <br><strong>Production</strong>
+                        <br>May 1977-1995
+                        <br>61,056 produced
+                        <br>
+                        <br><strong>Assembly</strong>
+                        <br>Germany:
+                        <br>Zuffenhausen
+                        <br>
+                        <br><strong>Designer</strong>
+                        <br>Wolfgang Möbius
+                        <br>Anatole Lapine</p>
+                    </div>
+                    <div class="right-column-section">
+                        <div class="subtitle">
+                            <h2>Body and chassis</h2>
+                        </div>
+                        <p><br><strong>Class</strong>
+                        <br>Grand tourer (S)
+                        <br>
+                        <br><strong>Body Style</strong>
+                        <br>2-door 2+2 hatchback/fastback coupé
+                        <br>
+                        <br><strong>Layout</strong>
+                        <br>Front-engine, rear-wheel-drive</p>
+                    </div>
+                    <div class="right-column-section">
+                        <div class="subtitle">
+                            <h2>Powertrain</h2>
+                        </div>
+                        <p><br><strong>Engine</strong>
+                        <br>4.5 L M28/01-M28/18 V8
+                        <br>4.7 L M28/19-M28/22 V8
+                        <br>5.0 L M28/41-M28/47 V8
+                        <br>5.4 L M28/49-M28/50 V8
+                        <br>
+                        <br><strong>Transmission</strong>
+                        <br>5-speed manual
+                        <br>3-speed automatic
+                        <br>4-speed automatic
+                        <br>
+                        <br><strong>Dimensions</strong>
+                        <br><i>Wheelbase</i>
+                        <br>2,500 mm (98.4 in)
+                        <br>
+                        <br><i>Length</i>
+                        <br>4,520 mm (178.0 in)
+                        <br>1988-1995: 4,524 mm (178.1 in)
+                        <br>
+                        <br><i>Width</i>
+                        <br>1987-1992: 1,837 mm (72.3 in)
+                        <br>1993-1995: 1,890 mm (74.4 in)
+                        <br>
+                        <br><i>Height</i>
+                        <br>Pre-1989: 1,275 mm (50.2 in)
+                        <br>1990-1995: 1,282 mm (50.5 in)
+                        <br>
+                        <br><i>Curb Weight</i>
+                        <br>1,450-1,620 kg (3,197-3,571 lb) (approx.)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <p>© 2025 Porsche. Maddix Cradlebaugh, Designer. Josh Ma, Creative Director. Sources: Wikipedia and Google Images.</p>
+        </div>
+        <script>
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                if (link.href === window.location.href.split('#')[0].split('?')[0]) {
+                link.classList.add("active");
+                }
+            });
+        </script>
+    </body>
+</html>

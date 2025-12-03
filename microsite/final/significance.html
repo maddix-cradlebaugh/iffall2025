@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porsche 928</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="significance">
+        <header>
+            <nav class="navbar">
+                <div class="logo"><a href="index.html">Porsche 928</a></div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="hamburger">&#9776;</label>
+                <ul class="navdiv">
+                     <li><a href="design.html" id="btn_design">Design</a></li>
+                     <li><a href="models.html" id="btn_models">Models</a></li>
+                     <li><a href="significance.html" id="btn_significance">Significance</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-content">
+            <h1>Award-Winning</h1>
+            <p>The Porsche 928 achieved high top speeds, and earned recognition upon its 1978 release by winning the European Car of the Year award.</p>
+            <br>
+            <h1>First of Its Kind</h1>
+            <p>This grand touring car which was manufactured and marketed by Porsche AG of Germany from 1977 to 1995 across a single generation with an intermediate facelift. It is a 2+2 coupé with a rear hatchback. The 928 has a water-cooled engine which is mounted in the front and drives the rear wheels. It was Porsche's first production car with a V8 engine.</p>
+            <br>
+            <h1>Blend of Designs</h1>
+            <p>Initially conceived to address changes in the automotive market, it represented Porsche's first fully in-house design for a production vehicle and was intended to potentially replace the Porsche 911 as the company's flagship model. The 928 aimed to blend the performance and handling characteristics of a sports car with the comfort, spaciousness, and ride quality of a luxury car.[2] Porsche executives believed that the 928 would have broader appeal compared to the compact, somewhat outdated, and slow-selling air-cooled 911.</p>
+            <br>
+            <img src="images/interior.jpeg" alt="Porsche 928 Interior View" class="significance-image">
+        </div>
+        <div class="footer">
+            <p>© 2025 Porsche. Maddix Cradlebaugh, Designer. Josh Ma, Creative Director. Sources: Wikipedia and Google Images.</p>
+        </div>
+        <script>
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                if (link.href === window.location.href.split('#')[0].split('?')[0]) {
+                link.classList.add("active");
+                }
+            });
+        </script>
+    </body>
+</html>
